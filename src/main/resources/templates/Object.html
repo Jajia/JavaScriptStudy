@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        const printPerson = (person) => {
+            console.log('name:' + person.name);
+            console.log('age:' + person.age);
+            console.log('gender:' + person.gender);
+        };
+        const function2 = (function1) => function1();
+        const function1 = () => console.log('function1');
+        function2(function1);
+        const person = {name: 'sean', age: 14, gender: 'male'};
+        printPerson(person);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
