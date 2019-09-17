@@ -9,11 +9,14 @@
             console.log('age:' + person.age);
             console.log('gender:' + person.gender);
         };
-        const function2 = (function1) => function1();
+
         const function1 = () => console.log('function1');
-        function2(function1);
+
         const person = {name: 'sean', age: 14, gender: 'male'};
         printPerson(person);
+
+        const person2 = {name: 'sean', age: 14, sayHello: () => console.log('hello')};
+        person2.sayHello();
     </script>
 </head>
 <body>
