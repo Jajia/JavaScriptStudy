@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Factory</title>
+    <script>
+        function createPerson(name, age, gender) {
+            return {name: name, age: age, gender: gender, fun: () => console.log(this)};
+        }
+
+        const person1 = createPerson('xiao', 22, 'male');
+        const person2 = createPerson('he', 23, 'female');
+        const person3 = createPerson('pan', 21, 'female');
+        console.log(person1);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prototype</title>
+    <script>
+        function Person(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        const person = new Person('xiao', 22);
+        const person2 = new Person('he', 23);
+        Person.prototype.a = 5;
+        console.log(person.a);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

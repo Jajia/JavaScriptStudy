@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Constructor</title>
+    <script>
+        function Person(name, age, sayHello) {
+            this.name = name;
+            this.age = age;
+            this.sayHello = sayHello;
+        }
+
+        function Dog() {
+
+        }
+
+
+        const person = new Person('xiao', 22, function () {
+            alert(this.name)
+        });
+        const dog = new Dog();
+        console.log(person instanceof Person);
+        console.log(dog);
+        person.sayHello();
+    </script>
+</head>
+<body>
+
+</body>
+</html>
